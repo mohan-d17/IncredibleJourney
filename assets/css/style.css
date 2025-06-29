@@ -381,8 +381,15 @@ body {
 }
 
 .hero-content { margin-bottom: 50px; }
+.hero-content{
+  text-align: center;
+}
+.hero-title{
+  text-align: center;
+}
 
 .hero .section-subtitle { margin-bottom: 15px; }
+
 
 .hero-title {
   color: var(--oxford-blue);
@@ -392,6 +399,8 @@ body {
   line-height: 1.2;
   max-width: 11ch;
   margin-bottom: 15px;
+  margin-left: 100px;
+  text-align: center;
 }
 
 .hero-text {
@@ -399,12 +408,16 @@ body {
   font-size: var(--fs-7);
   line-height: 1.7;
   margin-bottom: 15px;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .btn-group {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin-left: 100px;
+  
 }
 
 
