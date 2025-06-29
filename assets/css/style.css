@@ -1093,15 +1093,26 @@ body {
 
 @media (max-width: 575px) {
   .header {
-    height: auto !important;
-    overflow: visible !important;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.35s ease;
   }
+
+  .header.active {
+    height: auto;
+  }
+
   .navbar {
-    opacity: 1 !important;
-    visibility: visible !important;
-    position: relative;
-    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
   }
+
+  .header.active .navbar {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .navbar-list {
     flex-direction: column;
     align-items: flex-start;
