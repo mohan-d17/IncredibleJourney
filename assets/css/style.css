@@ -1089,3 +1089,21 @@ body {
     font-size: 2rem;
   }
 }
+
+
+@media (max-width: 575px) {
+  .header {
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .navbar {
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative;
+    z-index: 10;
+  }
+  .navbar-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
